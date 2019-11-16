@@ -19,9 +19,9 @@ export default class AppHome extends Component {
             <a
             key={val}
             href="http://www.alipay.com"
-            style={{ display: 'inline-block', width: '100%', height: 200 }}
+            style={{ display: 'inline-block', width: '100%', height: "30%" }}
             > 
-            <img src={require('./images/zhu.png')} style={{width:'100%',height:'100%',maxWidth:'100%',maxHeight:'100%'}}/>
+            <img src={require('./images/zhu.png')} style={{width:'100%',height:'100%'}}/>
               <img
               src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
               alt=""

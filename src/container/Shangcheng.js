@@ -21,9 +21,9 @@ export default class Shangcheng extends Component {
             <a
             key={val}
             href="http://www.alipay.com"
-            style={{ display: 'inline-block', width: '100%', height: 200 }}
+            style={{ display: 'inline-block', width: '100%', height:'30%'}}
             > 
-            <img src={require('./images/banner1.png')} style={{width:'100%',height:'100%',maxWidth:'100%',maxHeight:'100%'}}/>
+            <img src={require('./images/banner1.png')} style={{width:'100%',height:'100%'}}/>
               <img
               src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
               alt=""
@@ -37,11 +37,11 @@ export default class Shangcheng extends Component {
             </a>
             ))}
         </Carousel>
-        <img src={require('./images/zhongjian.png')} style={{maxWidth:'100%',maxHeight:'100%',width:'110',height:'290'}}/>
-        <img src={require('./images/dixia.png')} style={{maxWidth:'100%',maxHeight:'100%',width:'110',height:'290',marginTop:'10px'}}/>
-        <img src={require('./images/ing.png')} style={{maxWidth:'100%',maxHeight:'100%',width:'110',height:'290',marginTop:'10px'}}/>
+        <img src={require('./images/zhongjian.png')} style={{width:'100%',height:'100%'}}/>
+        <img src={require('./images/dixia.png')} style={{width:'100%',height:'100%'}}/>
+        <img src={require('./images/ing.png')} style={{width:'100%',height:'100%'}}/>
         
-        <div className="shangcheng"><button style={{color:'blue',float:'left',height:30,opacity:0.1}}>☰</button><SearchBar placeholder="输入关键字搜索" maxLength={8} className="srar"/></div>
+        <div className="shangcheng"><SearchBar placeholder="输入关键字搜索" maxLength={8} /></div>
       </div>
     );
   }
